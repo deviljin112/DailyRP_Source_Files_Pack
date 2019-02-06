@@ -46,14 +46,14 @@ So with all of that out the way, what is in this pack?
 Here are the credits of work that I can recall the most, and scripts that I've used the most, many are editted to my needs but their work is greatly appriciated and all the credits go to them
 
 THE LEGENDS:
-[ESX_ORG](https://github.com/ESX-Org)
-[ESX_PUBLIC](https://github.com/ESX-PUBLIC)
-[JsFour](https://github.com/jonassvensson4)
-[LuaDeldu](https://github.com/LuaDeldu)
-[MichaelHodgejr](https://github.com/michaelhodgejr)
-[Calle](https://github.com/qalle-fivem)
-[Lance Good](https://github.com/DevLanceGood)
-[N3MTV](https://github.com/N3MTV)
+- [ESX_ORG](https://github.com/ESX-Org)
+- [ESX_PUBLIC](https://github.com/ESX-PUBLIC)
+- [JsFour](https://github.com/jonassvensson4)
+- [LuaDeldu](https://github.com/LuaDeldu)
+- [MichaelHodgejr](https://github.com/michaelhodgejr)
+- [Calle](https://github.com/qalle-fivem)
+- [Lance Good](https://github.com/DevLanceGood)
+- [N3MTV](https://github.com/N3MTV)
 
 
 Feel free to PR yourself in the credits if I've missed you I simply don't have time or remember everyone who I've worked with or used their scripts.

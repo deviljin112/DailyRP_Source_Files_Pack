@@ -23,6 +23,8 @@ So with all of that out the way, what is in this pack?
     - My own work
     - Editted Scripts for the purpose of my server
     - The entire SQL file with the whole database I've used and editted for the purposes of my server (obviously empty)
+    
+Worth mentioning... Not everything is finished, set up or working to it's best ability. As I said in the opening statement I never got the chance to release this server, therefore it's not finished fully. Some things are fully default some are literally just dumped, some are editted fully but not added to any script or hotkey etc. Some is fully finished but not cleaned up or polished. It's more about taking bits together and giving a general idea for others who may want to take some of this and use or simply just get some coding ideas or whatever. Dont expect to just download run and have it over with as it will not work out of the box as it's not fully configured nor set up for plug-n-play. Anyway moving on...
 
 ## FAQ
 

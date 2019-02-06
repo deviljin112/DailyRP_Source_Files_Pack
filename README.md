@@ -57,6 +57,7 @@ THE LEGENDS:
 - [Calle](https://github.com/qalle-fivem)
 - [Lance Good](https://github.com/DevLanceGood)
 - [N3MTV](https://github.com/N3MTV)
+- [SaltyGrandpa](https://github.com/SaltyGrandpa)
 
 
 Feel free to PR yourself in the credits if I've missed you I simply don't have time or remember everyone who I've worked with or used their scripts.

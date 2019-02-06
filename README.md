@@ -27,19 +27,19 @@ So with all of that out the way, what is in this pack?
 ## FAQ
 
 **Q: Will you help me set this up on my server?**
-    - *A: No... Google it...*
+- *A: No... Google it...*
 
 **Q: Are you going to provide support if something is not working?**
-    - *A: No... Google it... (But feel free to put your issue in Help maybe someone will help you fix, I will also peek on it from time to time and help where I can)*
+- *A: No... Google it... (But feel free to put your issue in Help maybe someone will help you fix, I will also peek on it from time to time and help where I can)*
 
 **Q: Can you...?**
-    - *A: No... No I cant... Google it...*
+- *A: No... No I cant... Google it...*
 
 **Q: But like... I have a problem... :(**
-    - *A: Life is brutal... Google it...*
+- *A: Life is brutal... Google it...*
 
 **Q: This FAQ is useless...**
-    - *A: Who said anything about this being useful?*
+- *A: Who said anything about this being useful?*
 
 # CREDITS
 

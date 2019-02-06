@@ -1,0 +1,31 @@
+body {
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+    font-family: sans-serif;
+    overflow: hidden;
+    display: none;
+}
+
+.dialog {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+form {
+    margin: 0;
+}
+
+button {
+    display: block;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #286090;
+    border: 0;
+    color: #fff;
+    width: 100%;
+}

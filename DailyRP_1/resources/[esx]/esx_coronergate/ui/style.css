@@ -1,0 +1,184 @@
+
+/*-------------- Déclaration des polices non standard utilisées -------------- */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#disclaimer{
+  display: none;
+}
+
+#disclaimer h1{
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: 'Teko', sans-serif;
+	font-size: 26px;
+	-webkit-font-smoothing: antialiased;
+}
+	
+#disclaimer h2{
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1em;
+	-webkit-font-smoothing: antialiased;
+}
+
+#disclaimer h3{
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1em;
+	-webkit-font-smoothing: antialiased;
+}
+
+#disclaimer p{
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+#disclaimer p.imp {
+	color: #000;
+	font-size: 0.8em;
+	text-align: left;
+	margin: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+/*--------------  DIV principale du "disclaimer" -------------- */
+
+   
+#disclaimer .overlay{
+	position:fixed;
+	z-index: 1;    
+	width: 100%;					
+	height:100%;					
+	margin: 0;    					
+	text-align: center;
+	background: #000;				
+	opacity: 0.40; 									 
+}
+
+/*--------------  DIV principale du "disclaimer" -------------- */
+
+   
+#disclaimer .contenair{
+	position:absolute;
+	z-index: 2;    
+	width: 1900px;									
+	height:900px;									
+	left:50%;										
+	top:40%;										
+	margin:-350px 0 0 -950px;    					
+	text-align: center;
+	background:url("https://i.imgur.com/HaC5Ewa.png") no-repeat center fixed;	
+	padding: none; 									
+    opacity: 0.9;
+}
+	
+/*-------------- DIV contenant les textes du disclaimer --------------*/
+
+/*-------------- PAGE GAUCHE --------------*/
+#disclaimer .imageg{
+	z-index: 2;
+	width:320px;	
+	height:480px;
+	margin:170px 0 -500px -1500px;
+}
+#disclaimer .imageg2{
+	z-index: 2;
+	width:480px;	
+	height:280px;
+	margin:100px 0px 0px 1240px;
+}
+#disclaimer .innerbox{
+	z-index: 2;
+	width: 530px;	
+	margin: 50px 50px 0px 400px;  
+	text-align: left;
+	background: transparent;
+	-webkit-font-smoothing: antialiased;
+}
+
+#disclaimer .innerbox{
+	z-index: 2;
+	width: 530px;	
+	margin: -110px 50px 0px 400px;  
+	text-align: left;
+	background: transparent;
+	-webkit-font-smoothing: antialiased;
+}	
+	
+#disclaimer .innerbox2{
+	z-index: 2;
+	width: 850px;	
+	margin: 10px 50px 0px 50px;  
+	text-align: center;
+	background: transparent;
+	-webkit-font-smoothing: antialiased;
+}
+/*-------------- PAGE DROITE --------------*/
+
+#disclaimer .innerbox3{
+	z-index: 2;
+	width: 200px;	
+	margin: -712px 500px 0px 1050px;  
+	text-align: center;
+	background: transparent;
+	-webkit-font-smoothing: antialiased;
+}
+
+#disclaimer .innerbox4{
+	z-index: 2;
+	width: 500px;	
+	margin: -700px 0px 0px 1320px;  
+	text-align: center;
+	background: transparent;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*-------------------------------------------*/
+#disclaimer .spacer{
+	z-index: 2;
+	width: 100%;
+	height: 120px;
+  margin: 0;  
+	text-align: center;
+  background: transparent;	
+}
+
+#disclaimer .footspacer{
+	z-index: 2;
+	width: 100%;
+	height: 80px;
+  margin: 0;  
+	text-align: center;
+  background: transparent;	
+}
+	
+#disclaimer .footerbox{
+  z-index: 2;
+  width: 450px;	
+	margin: -650px 200px 0px 1000px;
+  height: 110px;
+  text-align: center; 
+}
+
+
+
+
+
+
+
+
+
+
+
+

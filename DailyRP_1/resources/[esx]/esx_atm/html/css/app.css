@@ -1,0 +1,59 @@
+@font-face {
+	font-family: pcdown;
+	src: url('pdown.ttf');
+}
+body {
+	font-family: roboto;
+}
+
+#cursor {
+    position: absolute;
+    z-index: 999999;
+    display:  none;
+}
+#menu {
+	background-image:url(https://i.imgur.com/XZjyOaq.png);
+	position: absolute;
+	top:  50%;
+	left:  50%;
+    padding: 50px;
+	border-radius: 10px;
+}
+#menu {
+	display       :  flex;
+	flex-direction: column;
+	width      : 800px;
+	height     : 350px;
+  margin-top : -75px;
+  margin-left: -250px;
+}
+#menu div {
+	display: flex;
+	flex-direction: row;
+}
+#deposit_btn {
+	width : 250px;
+	height: 50px;
+	font-size:  2em;
+	border-radius: 25px;
+    background-color: rgba(255, 126, 234, 0.89);
+}
+#deposit_amount {
+	width    : 250px;
+	height   : 50px;
+	font-size:  2em;
+	background-color: rgba(204, 204, 204, 0.87);
+}
+#withdraw_btn {
+	width : 250px;
+	height: 50px;
+	font-size:  2em;
+	border-radius: 25px;
+    background-color: rgba(255, 175, 55, 0.932);
+}
+#withdraw_amount {
+	width    : 250px;
+	height   : 50px;
+	font-size:  2em;
+    background-color: rgba(204, 204, 204, 0.87);
+}

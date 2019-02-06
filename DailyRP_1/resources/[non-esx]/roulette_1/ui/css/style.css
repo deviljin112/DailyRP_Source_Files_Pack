@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body, html {
+	overflow-y: hidden;
+	overflow-x: hidden;
+
+}
+
+
+.page {
+ background-image: url("../img/tausta.png");
+	position: relative;
+	 border-radius: 40px;
+	margin-top: 6%;
+	margin-left: 35%;
+
+	width: 580px;
+	height: 520px;
+	
+}
+
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.bottom {
+ background-image: url("../img/keski.png");
+	
+	width: 163px;
+	height: 163px;
+	position:relative;
+	left:36%;
+	top:26%;
+	z-index: -2;
+	
+}
+
+
+#top {
+
+	background-image: url("../img/tausta.png");
+	position: relative;
+	 border-radius: 40px;
+	margin-top: 6%;
+	margin-left: 35%;
+
+	width: 580px;
+	height: 520px;
+
+	background-color: #414244;
+	
+}
+
+
+
+
+#spin {
+	font-family: Impact, Charcoal, sans-serif;
+	position: relative;
+	left: 10%;
+	top: -275px;
+	
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius:8px;
+	
+	
+}
+
+#bet {
+	font-family: Impact, Charcoal, sans-serif;
+	position: relative;
+	left: 10%;
+	top: -275px;
+	
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius:8px;
+	
+	
+}
+
+#exit {
+	font-family: Impact, Charcoal, sans-serif;
+	position: relative;
+	left: 10%;
+	top: -275px;
+	
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius:8px;
+	
+	
+}
+
+
+
+
+
+
+
+
+#canvas {
+  position: relative;
+  top:-190px;
+  left:6.5%;
+  z-index: -1;
+ 
+  
+  
+}
+
+#myCanvas {
+  position: relative;
+  top:-671px;
+  left:-72%;
+  
+  
+  
+}
+
+#victory {
+  position: relative;
+  top:-778px;
+  left:81%;
+
+  
+  
+}
+

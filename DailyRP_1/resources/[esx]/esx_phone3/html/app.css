@@ -1,0 +1,877 @@
+body {
+	overflow: hidden;
+}
+
+:focus {
+	outline: none;
+}
+
+#phone {
+	display: none;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  width: 250px;
+  height: 535px;
+  border-radius: 43px;
+  background-image: url('../img/phone.png');
+}
+
+#screen {
+  background-image: url('../img/backgroundPhone.png');
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 235px;
+  height: 430px;
+  overflow: hidden;
+}
+
+.status-bar {
+	width : 100%;
+	height: 16px;
+}
+
+.app {
+	width: 100%;
+	height: 414px;
+}
+
+.app-inner {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+	max-height: 100%;
+	padding: 5px 5px;
+	overflow: hidden;
+}
+
+.status-bar {
+  width: inherit;
+  line-height: 18px;
+  font-size: 13px;
+  text-align: left;
+  font-weight: bold;
+  color: #ddd;
+  z-index: 101
+}
+
+.status-bar ul.signal {
+    float: left;
+    margin: 5px 5px 0 -35px;
+    position: relative;
+    height: 10px;
+    width: 14px
+}
+
+.status-bar div.time {
+  margin-top: -18px;
+  margin-left: 100px;
+}
+
+.status-bar .battery {
+    position: absolute;
+    top: 1px;
+    right: 17px;
+    width: 16px;
+    height: -16px;
+}
+
+.status-bar .battery .percentage {
+    position: absolute;
+    top: -4px;
+    left: -40px
+}
+
+.status-bar .battery2 {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    width: 16px;
+    height: -16px;
+}
+
+.status-bar .battery2 .percentage2 {
+    position: absolute;
+    top: -4px;
+    left: -40px
+}
+
+
+.status-bar .battery i {
+    width: 1px;
+    height: 3px;
+    position: absolute;
+    top: 2px;
+    right: -3px;
+    border: 1px solid #ddd
+}
+
+.status-bar .icons .right {
+    position: absolute;
+    width: 94px;
+    height: 40px;
+    top: -11px;
+    right: 70px
+}
+
+/* App : Home */
+
+#app-home .menu-icon {
+	width: 52px;
+	height: 52px;
+	padding: 2px;
+}
+
+#app-home .menu-icon .counter {
+	position: relative;
+	display: inline-block;
+  background: #FF0000;
+  border-radius: 90px;
+  min-width: 16px;
+  height: 16px;
+  color: #FFF;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: 30px;
+  padding: 1px;
+  font-weight: bold;
+  border: 1px solid #FFF;
+}
+
+#app-home .menu-icon-inner {
+  transform: translateX(-50%);
+  margin-left: 50%;
+	width: 32px;
+	height: 32px;
+	border-radius: 20%;
+}
+
+#app-home .menu-icon-label {
+	font-size: 0.9em;
+	color: #FFF;
+	margin-top: 2px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#app-home .menu-icon i {
+	width: 32px;
+	height: 32px;
+	margin-left: 16px;
+	margin-top: 16px;
+  transform: translate(-16px, -8px);
+  color: #FFF;
+  font-size: 1.6em;
+}
+
+#app-home .menu-icon-messages .menu-icon-inner {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH4gQYDhgehf9BqQAAA+lJREFUWMPF10mMFkUUB/BfdTczshlcIwmEg6IS4CKgQoILRMWDCwciceGAidGDevCsiUcPJhq9ilEPBo1REw+aiIQLaFAPkhgRPaESDIKyzMA3dLeHqp7pb+abmY8R4ksqvdSr+r+tXr0XoH5Vm3LUqBCwHBtxG5ZiIRZgNrK0psQQTuAP/Iyv8SUOJZ6Gt2qAwguEHuAlZmErnsHq9D0TOou9eBOfJsWyhBGFaAnQgK/BDqxIC0JrQWiNXlS3RkhgzftebMfBFtaoWZofjyTGFTjfMleeRjYFuBZo3gKv0l7r8G1yZ5l4ZC2TrMV7KNJ30TD9BwppjyIJMQ8f4saEkWVJwgJviL4ele4iUyPEFXi9cVmRXh7FqsRQdC0LOSH0iTEJVefbQpTYhPvwRQO2PT2z7pWBc2UrZmdAAYN6Rc6TjQArcXuLfYxK3PwAi9bPEDync4r9rzAynCxZN0rejYUF7kwyVqMWCHnU/I4XWfcy5dmxw9Qv1TX5AENH+f41OsPN+iDudjXWFmKGk36mtyqKsuwxDn/Fzo0MXBb/XyjVNdVIUm0UohIDfU0hHomJ5oesYOh4zGf5+XYwXaArJp25KRNz+yRsIZ7UJv2E0N/I8qjjgut5+g+W3EsnubYba1EhXiy9BQiNu0bt2a/dI2s+i7kLGbw8xVBotmiwrsowd2Z27VMQpoqdeU0qvkQUxj0nUH4Jwfuj5i74v6gscAbze07X1UT/ZblpM1LIyDr6cMHpAn8nASbmupDFo1OnTULOcDlWrE0qQM45XDMvfo+cSQqNnqIG668CR7C4W4A6vp34hVOHY86qMFKy/GHmL4nZbdJbMsT0vfIpRoY4+l0q6qq2APBbIRaQtxp/yHN8dE80eYY68OA7LNsW3RKmit+ky/AxPtvKyT8ZyHodx4MFvsHjPY0asmjyKxez+ROuvYXdz/HjuxRzjJV/vfBDTOOdDgNhPHgj/f4Ce0SPDXa5IWR0Km7YwEMfxw0+uItDexjMqP8xLWWBgZy6q6BoMI5hX4YDYg0/5puQc65i6Sa27OL4T7y9gl/3MLdIVV42/QjGg7cDYTeONKbY0TVZV7F4OvYDe1/i/Q2c/J3ZebwRm+M53Zj67niLsb6gSFZYpV2UVuItNphuxJnUA93U1Jyf4/7kaFmaeBYjWk2DLDCnINQXE/wEnk//QpOKc+zDE4kxj8+6jEVIv9fwBKqTMg34aWwRj36Oqt1c5tgpdjAH0oL2fJmEracBrFq8TadUiB3XauzSozVrC7FfjIVtYlw0bplJa3ZWjPbNWN/SvGwvuND2/Dqxu5msPT8iNqD7krZTtuf/Ar3aTsHUU7L7AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA0LTI0VDE0OjI0OjMwLTA0OjAw8dpJnwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNC0yNFQxNDoyNDozMC0wNDowMICH8SMAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAAElFTkSuQmCC')
+}
+
+#app-home .menu-icon-contacts .menu-icon-inner {
+	background-image: url('data:image/png;base64,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')
+}
+
+#app-home .menu-icon-bank .menu-icon-inner {
+	background-image: url("https://cdn.discordapp.com/attachments/394961715424395266/438414583766450178/rsz_contacts-samsung-3b597379bf0ab996-512x512_-_kopia.png");
+}
+
+#app-home .menu-icon-taxi .menu-icon-inner {
+	background-image: url("https://cdn.discordapp.com/attachments/394961715424395266/434460886116073472/rsz_uber-logo-9b6033c292-seeklogocom.png");
+}
+
+#app-home .menu-icon-mecano .menu-icon-inner {
+	background-image: url("https://cdn.discordapp.com/attachments/394961715424395266/434461585239703563/rsz_unnamed_2.png");
+}
+
+#app-home .menu-icon-ambulance .menu-icon-inner {
+	background-image: url("data:image/png;base64,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");
+}
+
+#app-home .menu-icon-police .menu-icon-inner {
+	background-image: url('data:image/png;base64,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');
+}
+
+#app-home .menu-icon-chrome .menu-icon-inner {
+	background-color: #38698B;
+}
+
+#app-home .menu-icon-twitch .menu-icon-inner {
+	background-color: #4B0082;
+}
+
+#app-home .menu-icon-sherif .menu-icon-inner {
+	background-color: #1A4B8B;
+}
+
+#app-home .menu-icon-deepweb .menu-icon-inner {
+	background-color: #5400FF;
+}
+
+#app-home .menu-icon-insurer .menu-icon-inner {
+	background-color: #3A3ABF;
+}
+
+#app-home .menu-icon-hacker .menu-icon-inner {
+  background-image: url('https://cdn.discordapp.com/attachments/416704563697942528/450740686082277376/hacker.png');
+}
+
+#app-home .menu-icon-lawyer .menu-icon-inner {
+	background-color: #E4670C;
+}
+
+#app-home .menu-icon-snapchat .menu-icon-inner {
+	background-color: #FFFF00;
+}
+
+#app-home .menu-icon-youtube .menu-icon-inner {
+	background-color: #FF0000;
+}
+
+#app-home .menu-icon-safari .menu-icon-inner {
+	background-color: #E4670C;
+}
+
+#app-home .menu-icon-unemployed .menu-icon-inner {
+	background-color: #3B3B3B;
+}
+
+#app-home .menu-icon-cardealer .menu-icon-inner {
+	background-image: url("data:image/png;base64,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");
+}
+
+#app-home .menu-icon-grocer .menu-icon-inner {
+	background-color: #0AB0E7;
+}
+
+#app-home .menu-icon-governor .menu-icon-inner {
+	background-color: #168D03;
+}
+
+#app-home .menu-icon-realestateagent .menu-icon-inner {
+	background-image: url("https://cdn.discordapp.com/attachments/394961715424395266/434077133896286228/rsz_unnamed_1.png");
+}
+
+#app-home .menu-icon-journalist .menu-icon-inner {
+	background-color: #C3A412;
+}
+
+#app-home .menu-icon-lscustom .menu-icon-inner {
+	background-color: #3B2BD6;
+}
+
+#app-home .menu-icon-teamster .menu-icon-inner {
+	background-color: #8C0073;
+}
+
+#app-home .menu-icon-tatoo .menu-icon-inner {
+	background-color: #288018;
+}
+
+#app-home .menu-icon-leboncoin .menu-icon-inner {
+	background-color: #D08A04;
+}
+
+
+/* App : Messages */
+
+#app-messages {
+	color: #FFF;
+}
+
+#app-messages .contact-list {
+	width: 100%;
+}
+
+#app-messages .contact {
+	padding: 5px;
+	width: 215px;
+}
+
+#app-messages .contact.selected .contact-name {
+	color: #FF0000;
+	font-weight: bold;
+    background-color: rgba(95, 195, 245, 0.25);
+}
+
+#app-messages .contact:nth-child(odd) {
+  border-style: solid;
+  border-color: rgba(95, 195, 245, 0.50);
+  background-color: rgba(95, 195, 245, 0.50);
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+#app-messages .contact:nth-child(even) {
+  border-style: solid;
+  border-color: rgba(95, 195, 245, 0.50);
+  background-color: rgba(95, 195, 245, 0.50);
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+#app-messages .contact-name {
+	font-size: 15px;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#app-messages .unread {
+	display: inline-block;
+	border-radius: 90px;
+	background-color: #9E0000;
+	color: #FFF;
+	min-width: 16px;
+	min-height: 16px;
+	padding: 3px;
+	text-align: center;
+}
+
+/* App : Incoming Call */
+
+#app-incoming-call {
+}
+
+#app-incoming-call .contact-infos {
+	width: 100%;
+	height: 50%;
+	color: #FFF;
+}
+
+#app-incoming-call .contact-infos .contact-name {
+	position: absolute;
+	text-align: center;
+	top: 25%;
+	font-size: 2em;
+	width: 100%;
+}
+
+#app-incoming-call .contact-infos .contact-number {
+	position: absolute;
+	text-align: center;
+	top: 35%;
+	font-size: 2em;
+	width: 100%;
+}
+
+#app-incoming-call .contact-infos .contact-number:before {
+	content: '(073) ';
+}
+
+#app-incoming-call .contact-actions-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-left: -5px;
+}
+
+#app-incoming-call .contact-action {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+#app-incoming-call .contact-action i {
+  font-size: 3em;
+  border-radius: 90px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  color: #111;
+}
+
+#app-incoming-call .contact-action.action-accept i {
+  background-color: #26a007;
+}
+
+#app-incoming-call .contact-action.action-deny i {
+  background-color: #FF0000;
+}
+
+/* App : Contacts */
+
+#app-contacts {
+	color: #FFF;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+#app-contacts .contact-actions div {
+  padding: 5px;
+  width: 215px;
+  text-align: center;
+    border-style: solid;
+  border-color: rgba(95, 195, 245, 0.50);
+  background-color: rgba(95, 195, 245, 0.50);
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+#app-contacts .contact-actions div.selected {
+  border-style: solid;
+  border-color: rgba(95, 195, 245, 0.50);
+  color: purple;
+  background-color: rgba(95, 195, 245, 0.50);
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+#app-contacts .contact-list, #app-contacts .contact-me {
+width: 100% 
+  border-style: solid;
+  border-color: rgba(95, 195, 245, 0.50);
+  background-color: rgba(95, 195, 245, 0.50);
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+#app-contacts .contact {
+	padding: 5px;
+	width: 215px;
+}
+
+#app-contacts .contact.selected {
+	font-weight: bold;
+	font-size: 16px;
+    color: purple;
+}
+
+#app-contacts .contact-list .contact:nth-child(odd) {
+  border-style: solid;
+  border-color: rgba(95, 195, 245, 0.50);
+  background-color: rgba(95, 195, 245, 0.50);
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+#app-contacts .contact-list .contact:nth-child(even) {
+  border-style: solid;
+  border-color: rgba(95, 195, 245, 0.50);
+  background-color: rgba(95, 195, 245, 0.50);
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+
+#app-contacts .contact-name, #app-contacts .contact-number {
+	display: inline-block;
+}
+
+#app-contacts .contact-number {
+	float: right;
+}
+
+#app-contacts .contact-number:before{
+	content: '(073) ';
+}
+
+/* App : Contact Add */
+
+#app-contact-add {
+
+}
+
+#app-contact-add .add-contact-wrapper {
+	width: 100%;
+	border-radius: 15px;
+  background-color: rgba(255,255,255, 0.50);
+}
+
+#app-contact-add .add-contact-wrapper div {
+	width: 100%;
+	border-radius: 15px;
+  background-color: rgba(255,255,255, 0.50);
+}
+
+#app-contact-add .add-contact-wrapper div input {
+	width: 100%;
+	border-radius: 15px;
+	  background-color: rgba(0255,255,255, 0.50);
+}
+
+/* App : Contact Actions */
+
+#app-contact-actions {
+}
+
+#app-contact-actions .contact-infos {
+	width: 100%;
+	height: 50%;
+	color: #FFF;
+}
+
+#app-contact-actions .contact-infos .contact-name {
+	position: absolute;
+	text-align: center;
+	top: 25%;
+	font-size: 2em;
+	width: 100%;
+}
+
+#app-contact-actions .contact-infos .contact-number {
+	position: absolute;
+	text-align: center;
+	top: 35%;
+	font-size: 2em;
+	width: 100%;
+}
+
+#app-contact-actions .contact-infos .contact-number:before {
+	content: '(073) ';
+}
+
+#app-contact-actions .contact-actions-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-left: -5px;
+}
+
+#app-contact-actions .contact-action.action-call {
+	flex-basis: 30%;
+	text-align: center;
+	margin-left: 5%;
+}
+
+#app-contact-actions .contact-action.action-call i {
+  font-size: 2.5em;
+  background-color: #26a007;
+  border-radius: 90px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #111;
+}
+
+#app-contact-actions .contact-action.action-message {
+	flex-basis: 30%;
+	text-align: center;
+}
+
+#app-contact-actions .contact-action.action-message i {
+  font-size: 2.5em;
+  background-color: #0480F4;
+  border-radius: 90px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #111;
+}
+
+#app-contact-actions .contact-action.action-remove {
+	flex-basis: 30%;
+	text-align: center;
+}
+
+#app-contact-actions .contact-action.action-remove i {
+  font-size: 2.5em;
+  background-color: #b70707;
+  border-radius: 90px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #111;
+}
+
+/* App : Contact Action Call */
+
+@keyframes circle-light-1 {
+	0%   { color: #B4CEFF; }
+	25%  { color: #FFFFFF; }
+	50%  { color: #005AFF; }
+	75%  { color: #3079FF; }
+	100% { color: #6A9FFF; }
+}
+
+@keyframes circle-light-reverse-1 {
+	0%   { color: #6A9FFF; }
+	25%  { color: #3079FF; }
+	50%  { color: #005AFF; }
+	75%  { color: #FFFFFF; }
+	100% { color: #B4CEFF; }
+}
+
+@keyframes circle-light-2 {
+	0%   { color: #3079FF; }
+	25%  { color: #6A9FFF; }
+	50%  { color: #B4CEFF; }
+	75%  { color: #FFFFFF; }
+	100% { color: #005AFF; }
+}
+
+@keyframes circle-light-reverse-2 {
+	0%   { color: #005AFF; }
+	25%  { color: #FFFFFF; }
+	50%  { color: #B4CEFF; }
+	75%  { color: #6A9FFF; }
+	100% { color: #3079FF; }
+}
+
+@keyframes circle-light-3 {
+	0%   { color: #005AFF; }
+	25%  { color: #3079FF; }
+	50%  { color: #6A9FFF; }
+	75%  { color: #B4CEFF; }
+	100% { color: #FFFFFF; }
+}
+
+@keyframes circle-light-reverse-3 {
+	0%   { color: #FFFFFF; }
+	25%  { color: #B4CEFF; }
+	50%  { color: #6A9FFF; }
+	75%  { color: #3079FF; }
+	100% { color: #005AFF; }
+}
+
+#app-contact-action-call {
+}
+
+#app-contact-action-call .contact-infos {
+	width: 100%;
+	height: 50%;
+	color: #FFF;
+}
+
+#app-contact-action-call .contact-infos .contact-name {
+	position: absolute;
+	text-align: center;
+	top: 25%;
+	font-size: 2em;
+	width: 100%;
+}
+
+#app-contact-action-call .contact-infos .contact-number {
+	position: absolute;
+	text-align: center;
+	top: 35%;
+	font-size: 2em;
+	width: 100%;
+}
+
+#app-contact-action-call .contact-infos .contact-number:before{
+	content: '(073) ';
+}
+
+#app-contact-action-call .loader {
+	width: 100%;
+	height: 50%;
+}
+
+#app-contact-action-call .loader .circle {
+	position: absolute;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+#app-contact-action-call .loader .circle i {
+	color: #005AFF;
+}
+
+#app-contact-action-call .loader .circle:nth-child(1) {
+	top: 50%;
+}
+
+#app-contact-action-call .loader .circle:nth-child(1) i {
+	animation: circle-light-1 1s infinite, circle-light-reverse-1 1s infinite;
+}
+
+#app-contact-action-call .loader .circle:nth-child(2) {
+	top: 60%;
+	animation: circle-light-2 1s infinite, circle-light-reverse-2 1s infinite;
+}
+
+#app-contact-action-call .loader .circle:nth-child(2) i {
+	animation: circle-light-2 1s infinite, circle-light-reverse-2 1s infinite;
+}
+
+
+#app-contact-action-call .loader .circle:nth-child(3) {
+	top: 70%;
+	animation: circle-light-3 1s infinite, circle-light-reverse-3 1s infinite;
+}
+
+#app-contact-action-call .loader .circle:nth-child(3) i {
+	animation: circle-light-3 1s infinite, circle-light-reverse-3 1s infinite;
+}
+
+#app-contact-action-call .loader .info {
+	position: absolute;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	top: 85%;
+	color: #FFF;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#app-contact-action-call.online .loader .circle {
+	display: none;
+}
+
+/* App : Contact Action Message */
+
+#app-contact-action-message {
+	color: #FFF;
+}
+
+#app-contact-action-message .message-container  {
+	width: 100%;
+	min-height: 305px;
+}
+
+#app-contact-action-message .message-container .time {
+	width: 100%;
+	text-align: center;
+	font-size: 1.0em;
+}
+
+#app-contact-action-message .message-container .message {
+	border: 1px solid #E8E177;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 20px 20px 0 20px;
+	background-color: #E8E177;
+	width: 75%;
+	margin-left: 10%;
+	color: #000;
+}
+
+#app-contact-action-message .message-container .message.self {
+	background-color: #00697E;
+	margin-left: 0;
+	border-radius: 20px 20px 20px 0;
+	border-color: #00697E;
+	color: #FFF;
+}
+
+#app-contact-action-message .message-input {
+	width: 100%;
+}
+
+#app-contact-action-message .message-input textarea[name="message"] {
+	width: 100%;
+	height: 70px;
+	border-radius:20px;
+}
+
+#app-contact-action-message .message-input textarea[name="message"].typing {
+	border: 2px solid #337bff;
+	border-radius: 20px;
+}
+
+#app-contact-action-message .message-actions {
+	height: 30px;
+}
+
+/* App : Bank */
+
+#app-bank {
+	background-color: #FFF;
+}
+
+#app-bank .app-inner {
+	height: 400px;
+}
+
+#app-bank .logo {
+  width: 100%;
+  text-align: center;
+	margin-top: 20px;
+}
+
+#app-bank .balance {
+	width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  color: #02900e;
+  font-size: 2em;
+}
+
+#app-bank .balance:after {
+	content: ' SEK';
+  font-size: 0.8em;
+}
+
+#app-bank .balance.positive:before {
+	content: '+ ';
+}
+
+#app-bank .balance.negative:before {
+	content: '- ';
+}
+
+#app-bank .button-container {
+	width: 100%;
+	display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+#app-bank .button {
+	width: 80%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: lightblue;
+	font-size:20px;
+	color: #FFF;
+	bottom: 0;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+#app-bank .button.selected {
+ color:blue ;
+}
+
+/* App : Bank Transfer */
+
+#app-bank-transfer {
+	background-color: #FFF;
+	color: #000;
+}
+
+#app-bank-transfer .contact {
+	padding: 5px;
+	width: 215px;
+}
+
+#app-bank-transfer .contact.selected {
+	color: #0018FF;
+	font-weight: bold;
+}
+
+#app-bank-transfer .contact:not(:last-child) {
+	border-bottom: 1px solid #CCC;
+}
+
+/* App : Bank Transfer Menu */
+
+#app-bank-transfer-menu {
+}
+
+#app-bank-transfer-menu .transfer-wrapper {
+	width: 100%;
+  margin-top: 200px;
+  transform: translateY(-50%);
+}
+
+#app-bank-transfer-menu .transfer-wrapper div {
+	width: 100%;
+}
+
+#app-bank-transfer-menu .transfer-wrapper div input {
+	width: 100%;
+}

@@ -1,0 +1,16 @@
+PriorityPlayers:
+    - SteamId:  110000103ca4989 # D3v
+      Priority: 1  # Lower number == higher priority
+
+    - SteamId:  11000010b4bff4f # Hibari
+      Priority: 1
+
+    - SteamId:  110000105174271 # Moose
+      Priority: 1
+      
+    # ... More players here
+
+DisconnectGrace: 30 # In seconds
+QueueWhenNotFull: false # Set to 'true' to force players in one by one, even when the server isn't full
+DeferralDelay: 500 # In miliseconds
+ConnectionTimeout: 30 # In seconds

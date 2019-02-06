@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div id="computer">
+      <div id="screen">
+        <p id="error"></p>
+        <div id="header">
+          <img src="" alt="logo" draggable="false"/>
+          <p>09:00</p>
+        </div>
+        <div id="content">
+          <div id="login">
+            <form type="login" class="nospace">
+              <input placeholder="Haslo" type="password"/>
+            </form>
+          </div>
+          <div id="start">
+            <ul class="block">
+              <li class="header">
+              	<h1>Numer Rejestracyjny</h1>
+              	<form type="car" class="nospace">
+              	  <input placeholder="ABC123"/>
+              	</form>
+              	<a href="#!" class="search"><i class="material-icons">directions_car</i></a>
+              </li>
+              <div id="car-content">
+
+              </div>
+            </ul>
+            <ul class="block">
+              <li class="header">
+              	<h1>Pesel</h1>
+              	<form type="person" class="nospace">
+              	  <input placeholder="rrmmdd-xxxx"/>
+              	</form>
+              	<a href="#!" class="search"><i class="material-icons">Osoba</i></a>
+              </li>
+              <div id="person-content">
+
+              </div>
+            </ul>
+            <div class="block block-buttons">
+              <a href="#!" class="waves-effect btn-flat" page="efterlys">POSZUKIWANI</a>
+              <a href="#!" class="waves-effect btn-flat" page="regelverk">Kodeks</a>
+              <a href="#!" class="waves-effect btn-flat" page="dna">DNA</a>
+              <a href="#!" class="waves-effect btn-flat" page="incidenter">Wykroczenia</a>
+              <a href="#!" class="waves-effect btn-flat" class="admin" page="admin">LOGI</a>
+            </div>
+          </div>
+          <div id="admin" class="info">
+            <a href="#!" class="close"><i class="material-icons">close</i></a>
+            <h1>LOGI</h1>
+            <hr />
+            <table>
+              <thead>
+                <tr>
+                  <td>Typ</td>
+                  <td>Usunieto z</td>
+                  <td>ID</td>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </div>
+          <div id="car" class="info">
+            <a href="#!" class="close"><i class="material-icons">close</i></a>
+            <h1>Informacje o pojezdzie</h1>
+            <hr />
+            <form type="new-car">
+              <input id="new-car" placeholder="Powod"/>
+            </form>
+            <a href="#!" class="button" id="add-car-info">Nowa Uwaga</a>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Właściciel:</td>
+                  <td><a href="#!" id="car-owner" class="user">Ładowanie..</a></td>
+                </tr>
+                <tr>
+                  <td>Kontrolowany:</td>
+                  <td id="car-inspected">Ładowanie..</td>
+                </tr>
+                <tr>
+                  <td>Uwagi:</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul id="car-comments">
+
+            </ul>
+          </div>
+          <div id="person" class="info">
+            <a href="#!" class="close"><i class="material-icons">close</i></a>
+            <h1>Dane Osobowe</h1>
+            <hr />
+            <img src="assets/images/user.png" alt="IMG" draggable="false"/>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Nazwa:</td>
+                  <td id="person-name">Ładowanie..</td>
+                </tr>
+                <tr>
+                  <td>Data Urodzenia:</td>
+                  <td id="person-personnummer">Ładowanie..</td>
+                </tr>
+                <tr>
+                  <td>Płeć:</td>
+                  <td id="person-sex">Ładowanie..</td>
+                </tr>
+                <tr>
+                  <td>Wzrost:</td>
+                  <td id="person-height">Ładowanie..</td>
+                </tr>
+                <tr>
+                  <td>Numer Telefonu:</td>
+                  <td id="person-phone">Ładowanie..</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul id="person-brottsregister">
+              <h4>Status Karalności:</h4>
+            </ul>
+            <ul id="person-incident">
+              <h4>Poszukiwany: <b></b><a href="#!" class="remove" dob="" type="efterlysning" title="Usuniete"><i class="material-icons">remove_circle_outline</i></a></h4>
+              <li><a href="#!" class="inc-link"></a></li>
+            </ul>
+          </div>
+          <div id="efterlys" class="info">
+            <a href="#!" class="close"><i class="material-icons">close</i></a>
+            <h1>Poszukiwany</h1>
+            <hr />
+            <form id="efterlys-form">
+              <div class="input-block">
+                <h1>Imie</h1>
+                <input placeholder="Jan" id="efterlys-firstname" required/>
+              </div>
+              <div class="input-block">
+                <h1>Nazwisko</h1>
+                <input placeholder="Kowalski" id="efterlys-lastname" required/>
+              </div>
+              <div class="input-block">
+                <h1>Pesel</h1>
+                <input placeholder="rrmmdd-xxxx" id="efterlys-personnummer" required/>
+              </div>
+              <div class="input-block">
+                <h1>Przewinienia</h1>
+                <input placeholder="Mordestwo..." id="efterlys-crime" required/>
+              </div>
+              <div class="input-block">
+                <h1>Zdarzenie</h1>
+                <input placeholder="Numer sprawy" id="efterlys-incident" required/>
+              </div>
+              <button id="efterlys-submit" class="waves-effect btn-flat">Poszukiwany</button>
+            </form>
+            <hr />
+            <ul>
+              <p class="title">Poszukiwany:</p>
+              <div id="efterlys-content">
+
+              </div>
+            </ul>
+          </div>
+          <div id="regelverk" class="info">
+            <a href="#!" class="close"><i class="material-icons">close</i></a>
+            <h1>Kodeks</h1>
+            <hr />
+            <ul>
+
+            </ul>
+          </div>
+          <div id="incidenter" class="info">
+            <a href="#!" class="close"><i class="material-icons">close</i></a>
+            <h1>Zdarzenie</h1>
+            <hr />
+            <form class="nospace" type="incident">
+              <input placeholder="Numer sprawy"/>
+            </form>
+            <a href="#!" class="button waves-effect" id="incident-search">Otwórz</a>
+            <div id="incident-a">
+              <form>
+                <textarea id="incident-text" required></textarea>
+              </form>
+              <a href="#!" class="button button-large waves-effect" id="incident-add">Dodaj</a>
+              <ul>
+
+              </ul>
+            </div>
+            <div id="incident">
+              <h4 class="title"></h4>
+              <a href="#!" class="remove no" title="Ta bort" type="incident" inc-numb=""><i class="material-icons">remove_circle_outline</i></a>
+              <p></p>
+            </div>
+          </div>
+          <div id="dna" class="info">
+            <a href="#!" class="close"><i class="material-icons">close</i></a>
+            <h1>DNA - Wysyłanie</h1>
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.js" type="text/javascript"></script>
+    <script src="assets/js/materialize.js" type="text/javascript"></script>
+    <script src="assets/js/regelverk.js" type="text/javascript"></script>
+    <script src="assets/js/passwords.js" type="text/javascript"></script>
+    <script src="assets/js/init.js" type="text/javascript"></script>
+  </body>
+</html>

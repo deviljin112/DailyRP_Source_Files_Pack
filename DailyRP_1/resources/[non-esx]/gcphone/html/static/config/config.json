@@ -1,0 +1,182 @@
+{
+  "reseau": "DailyRP",
+  "background" : {
+    "Calvin & Hobbes": "back001.jpg",
+    "Destiny": "back002.jpg",
+    "Guitare": "01.jpg",
+    "Los Santos": "02.jpg",
+    "Poursuite": "03.jpg",
+    "Franklin": "04.jpg",
+    "Police boom": "05.jpg",
+    "Trevor & Michael": "06.jpg",
+    "San Andreas": "07.jpg",
+    "Cité": "08.jpg",
+    "Ciel & Forêt": "09.jpg",
+    "Forêt Colorer": "10.jpg",
+    "Vague Géante": "11.jpg",
+    "Lion": "12.jpg",
+    "Planète": "13.jpg",
+    "Rose": "14.jpg",
+    "Bleu": "15.jpg",
+    "Noir": "16.jpg",
+    "Chocolat": "17.jpg",
+    "Assassins Creed": "18.jpg",
+    "Stalactite": "19.jpg",
+    "Origin": "20.jpg",
+    "Pacman": "21.jpg",
+    "Custom": "URL"
+  },
+  "background_default": {
+    "label": "Calvin & Hobbes",
+    "value": "back001.jpg"
+  },
+  "coque": {
+    "Iphone X": "iphonex.png"
+  },
+  "coque_default": {
+    "label": "Iphone X",
+    "value": "iphonex.png"
+  },
+  "serviceCall": [
+    {
+      "display": "Policja",
+      "icon": "/html/static/img/icons_app/policier.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "police"
+        }
+      ]
+    },
+    {
+      "display": "Ambulans",
+	  "icon": "/html/static/img/icons_app/ambulancier.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "ambulance"
+        }
+      ]
+    },
+    {
+      "display": "Taxi",
+	  "icon": "/html/static/img/icons_app/taxi.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "taxi"
+        }
+      ]
+    },
+    {
+      "display": "Mechanik",
+	  "icon": "/html/static/img/icons_app/mecano.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "mecano"
+        }
+      ]
+    },
+    {
+	  "display": "FIB",
+	  "icon": "/html/static/img/icons_app/fib.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "fib"
+        }
+      ]
+    },
+    {
+      "display": "Rzad",
+	  "icon": "/html/static/img/icons_app/state.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "state"
+        }
+      ]
+    },
+    {
+      "display": "Bahamas",
+	  "icon": "/html/static/img/icons_app/bahama.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "bahama"
+        }
+      ]
+    },
+    {
+      "display": "Pilot",
+	  "icon": "/html/static/img/icons_app/pilot.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "pilot"
+        }
+      ]
+    },
+    {
+      "display": "Agent Nieruchomosci",
+	  "icon": "/html/static/img/icons_app/agent.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "realestateagent"
+        }
+      ]
+    },
+    {
+      "display": "Sklep",
+	  "icon": "/html/static/img/icons_app/epicerie.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "epicerie"
+        }
+      ]
+    },
+    {
+      "display": "US.Army",
+	  "icon": "/html/static/img/icons_app/army.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "army"
+        }
+      ]
+    },
+    {
+      "display": "Unicorn",
+	  "icon": "/html/static/img/icons_app/unicorn.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "unicorn"
+        }
+      ]
+    },
+    {
+      "display": "Brinks",
+	  "icon": "/html/static/img/icons_app/brinks.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "brinks"
+        }
+      ]
+    },
+    {
+      "display": "Reporter",
+	  "icon": "/html/static/img/icons_app/journaliste.png",
+      "subMenu": [
+        {
+		  "title": "Wyslij Wiadomosc",
+          "eventName": "journaliste"
+        }
+      ]
+    }
+  ]
+}

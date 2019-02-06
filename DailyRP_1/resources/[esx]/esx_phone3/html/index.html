@@ -1,0 +1,273 @@
+<html>
+
+<head>
+  
+  <meta charset="utf-8"/>
+ 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+
+</head>
+
+<body>
+	
+	<div id="phone" class="animated slideInUp">
+		
+		<div id="screen">
+			
+			<div class="status-bar">
+		    <ul class="signal">
+		    </ul>
+		    <span class="network">PRP</span>
+		    <div class="time"><span class="hour">0</span>:<span class="minute">00</span></div>
+		    <div class="battery2"><span class="percentage2"></span><b class="fa fa-wifi fa-fw"></b>
+		    <div class="battery"><span class="percentage"></span><b class="fa fa-battery-three-quarters fa-fw"></b>
+		    </div>
+			</div>
+
+			<div id="app-home" class="app">
+
+				<div class="app-inner">
+
+					<div class="menu-icon menu-icon-contacts" data-app="contacts">
+						<div class="menu-icon-inner">
+						</div>
+						<div class="menu-icon-label">Kontakty</div>
+					</div>
+
+					<div class="menu-icon menu-icon-messages" data-app="messages">
+						<div class="menu-icon-inner">
+						</div>
+						<div class="menu-icon-label">Wiadomosci</div>
+						<div class="counter">5</div>
+					</div>
+
+					<div class="menu-icon menu-icon-bank" data-app="bank">
+						<div class="menu-icon-inner">
+						</div>
+						<div class="menu-icon-label">Bank</div>
+					</div>
+
+					<div class="menu-icon menu-icon-police" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;Police&quot;, &quot;number&quot;: &quot;police&quot;}">
+						<div class="menu-icon-inner">
+						</div>
+						<div class="menu-icon-label">Policja</div>
+					</div>
+
+					<div class="menu-icon menu-icon-ambulance" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;Ambulance&quot;, &quot;number&quot;: &quot;ambulance&quot;}">
+						<div class="menu-icon-inner">
+						</div>
+						<div class="menu-icon-label">EMS</div>
+					</div>
+
+					<div class="menu-icon menu-icon-cardealer" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;Concession&quot;, &quot;number&quot;: &quot;cardealer&quot;}">
+						<div class="menu-icon-inner">
+						</div>
+						<div class="menu-icon-label">Sprzedawca Aut</div>
+					</div>
+
+					<div class="menu-icon menu-icon-realestateagent" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;Immobilier&quot;, &quot;number&quot;: &quot;realestateagent&quot;}">
+						<div class="menu-icon-inner">
+						</div>
+						<div class="menu-icon-label">Agent Nieruchomosci</div>
+					</div>
+
+					<div class="menu-icon menu-icon-mecano" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;Mecano&quot;, &quot;number&quot;: &quot;mecano&quot;}">
+						<div class="menu-icon-inner">
+						</div>
+						<div class="menu-icon-label">Mechanik</div>
+					</div>
+
+					<div class="menu-icon menu-icon-taxi" data-app="contact-action-message" data-args="{&quot;name&quot;: &quot;Taxi&quot;, &quot;number&quot;: &quot;taxi&quot;}">
+						<div class="menu-icon-inner">
+						</div>
+						<div class="menu-icon-label">Taxi</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div id="app-incoming-call" class="app">
+
+				<div class="app-inner">
+					
+					<div class="contact-infos">
+						<div class="contact-name"></div>
+						<div class="contact-number"></div>
+					</div>
+
+					<div class="contact-actions-wrapper">
+						<div class="contact-action action-accept" data-action="accept">
+							<i class="fa fa-phone fa-fw"></i>
+						</div>
+						<div class="contact-action action-deny" data-action="deny">
+							<i class="fa fa-phone fa-fw"></i>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div id="app-contacts" class="app">
+
+				<div class="app-inner">
+					
+					<div class="contact-actions">
+						<div class="add-contact">Nowy Kontakt</div>
+					</div>
+
+					<div class="contact-me">
+						<div class="contact"><div class="contact-name">Moj Numer:</div><div class="contact-number"></div></div>
+					</div>
+					
+					<div class="contact-list"></div>
+				</div>
+
+			</div>
+
+			<div id="app-contact-add" class="app">
+
+				<div class="app-inner">
+					
+					<div class="add-contact-wrapper">
+						<div><input type="text" name="add-contact-name" placeholder="Jan Kowalski"/></div>
+						<div><input type="number" name="add-contact-number" max="99999" placeholder="64461"/></div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div id="app-contact-actions" class="app">
+
+				<div class="app-inner">
+					
+					<div class="contact-infos">
+						<div class="contact-name"></div>
+						<div class="contact-number"></div>
+					</div>
+
+					<div class="contact-actions-wrapper">
+						<div class="contact-action action-call" data-action="call">
+							<i class="fa fa-phone fa-fw"></i>
+						</div>
+						<div class="contact-action action-message" data-action="message">
+							<i class="fa fa-envelope fa-fw"></i>
+						</div>
+						<div class="contact-action action-remove" data-action="remove">
+							<i class="fa fa-trash fa-fw"></i>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div id="app-contact-action-call" class="app">
+
+				<div class="app-inner">
+					
+					<div class="contact-infos">
+						<div class="contact-name"></div>
+						<div class="contact-number"></div>
+					</div>
+
+					<div class="loader">
+						<div class="circle"><i class="fa fa-circle fa-fw"></i></div>
+						<div class="circle"><i class="fa fa-circle fa-fw"></i></div>
+						<div class="circle"><i class="fa fa-circle fa-fw"></i></div>
+						<div class="info">Polaczenie wychodzace</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="app-contact-action-message" class="app">
+
+				<div class="app-inner">
+
+					<div class="message-container"></div>
+
+					<div class="message-input">
+						<textarea name="message" placeholder="[U]      => GPS&#10;[ENTER] => Napisz wiadomosc + Aktywuj myszke"></textarea>
+					</div>
+
+					<div class="message-actions">
+						<input type="checkbox" name="anon">Anonim</input>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div id="app-messages" class="app">
+
+				<div class="app-inner">
+					
+					<div class="contact-list"></div>
+
+				</div>
+
+			</div>
+
+			<div id="app-bank" class="app">
+
+				<div class="app-inner">
+					
+					<div class="logo">
+						<img src="data:image/png;base64,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" />
+					</div>
+					
+					<div class="button-container">
+						<div class="button" data-action="transfer">Dokonaj Przelewu</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div id="app-bank-transfer" class="app">
+				
+				<div class="app-inner">
+					<div class="contact-list"></div>
+				</div>
+
+			</div>
+
+			<div id="app-bank-transfer-menu" class="app">
+
+				<div class="app-inner">
+					
+					<div class="transfer-wrapper">
+						<div><input type="number" name="transfer-amount" placeholder="Summa"/></div>
+					</div>
+
+				</div>
+
+			</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="scripts/mustache.min.js"></script>
+
+	<script src="scripts/app.js"></script>
+	<script src="scripts/apps/home.js"></script>
+	<script src="scripts/apps/messages.js"></script>
+	<script src="scripts/apps/incoming-call.js"></script>
+	<script src="scripts/apps/contacts.js"></script>
+	<script src="scripts/apps/contact-add.js"></script>
+	<script src="scripts/apps/contact-actions.js"></script>
+	<script src="scripts/apps/contact-action-call.js"></script>
+	<script src="scripts/apps/contact-action-message.js"></script>
+	<script src="scripts/apps/bank.js"></script>
+	<script src="scripts/apps/bank-transfer.js"></script>
+	<script src="scripts/apps/bank-transfer-menu.js"></script>
+
+</body>
+</html>

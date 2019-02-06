@@ -1,0 +1,11 @@
+
+server/blips\.json
+
+OLD/
+
+GitVersion\.yml
+
+generate-changes\.bat
+
+.changelog.rc
+changelog.py

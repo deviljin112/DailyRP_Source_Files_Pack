@@ -1,0 +1,9 @@
+CREATE TABLE hospital (
+	identifier VARCHAR(100) NOT NULL,
+	H_Time int(10) NOT NULL,
+	H_Bed VARCHAR(5) NOT NULL,
+	Medic VARCHAR(100) NOT NULL,
+	Medic_ID VARCHAR(100) NOT NULL,
+	reason VARCHAR(100) NOT NULL,
+	PRIMARY KEY (identifier)
+);

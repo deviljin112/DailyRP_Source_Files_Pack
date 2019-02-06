@@ -1,0 +1,15 @@
+PriorityPlayers:  # List of players with a custom priority value (Anyone not in this list will default to Priority = 100)
+    - SteamId:  110000103ca4989 # D3v
+      Priority: 1  # Lower number == higher priority
+
+    - SteamId:  11000010b4bff4f # Hibari
+      Priority: 1  # Lower number == higher priority
+
+    - SteamId:  110000105174271 # Moose
+      Priority: 1  # Lower number == higher priority
+
+    # ... More players here
+
+DisconnectGrace: 180      # In Seconds
+QueueWhenNotFull: false    # true/false
+ConnectionTimeout: 120    # In Seconds

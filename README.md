@@ -1,5 +1,7 @@
 # DailyRP_SOURCE_CODE
 
+WARNING: DO NOT USE THE NAME DAILYRP OR THE LOGO AND SELL IT OR PROMOTE IT AS YOUR OWN. ASK FOR PERMISSION FIRST. GRAPHICS ARE THERE AS A REFERENCE AND IDEA. BUT IF I FIND SOMEONE ABUSING THAT I WILL REMOVE THEM. NAME DAILYRP AS WELL AS ALL THE GRAPHICS ARE UNDER MY COPYRIGHT. THANK YOU CONTINUE.
+
 This is the source code for my unreleased server "DailyRP" which I've been working on for many many months with a small team of friends. Life responsibilities took over and I could never finish or start this server. Anyway I figured I just release this source code and let the community enjoy the work or get some ideas about what they might want to potentially use on their server. Side Note: I'm Polish therefore everything is set to Polish and translated to Polish, tho it's a lot of work I usually also translated to English and made many English translations in files - Also made all comments in all scripts in English for ease of sharing.
 
 ## FIRSTLY
